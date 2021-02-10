@@ -1,0 +1,70 @@
+$primary-color: #3292a6;
+$primary-overlay: rgba(50, 146, 156, 0.7);
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin-top: 90px;
+}
+//Navbar
+.navbar{
+    box-shadow: 2px 2px 5px $primary-color;
+    background: #fff;
+    opacity: 0.9;
+    .nav-item{
+        font-size: 1.4rem;
+        padding-right: 20px;
+        .nav-link{
+            color: #252525;
+        }
+        .nav-link:hover{
+            color: $primary-color;
+        }
+    }
+    .nav-item:last-child{
+        padding-right: 0;
+    }
+}
+//Show Case Section
+#show-case{
+    background: url(../img/mountains.jpg);
+    min-height: 600px;
+    position: relative;
+    .primary-overlay{
+        background-color: $primary-overlay;
+        min-height: 600px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+//Subscribe
+#subscribe{
+    background: #252525;
+}
+//Authors Section
+#authors{
+    img{
+        margin-top: -60px;
+    }
+    .card:hover{
+        background: $primary-color;
+        color: #fff;
+        .fa{
+            color: #fff;
+        }
+    }
+    .fa{
+        font-size: 25px;
+    }
+}
+//Show-case section media Query
+@media (max-width: 576px){
+    #show-case{
+        h1{
+            font-size: 4rem;
+        }
+    }
+}
